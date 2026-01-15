@@ -96,4 +96,15 @@ public class UtilityClass extends BaseClass {
         }
     }
 
+    public static boolean verifyTitle(String Expected) {
+
+        boolean result = false;
+        if (Expected.equals(driver.getTitle())) {
+            result = true;
+        }else {
+            return  false;
+        }
+        return result;
+    }
+
 }
