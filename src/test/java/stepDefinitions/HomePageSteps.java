@@ -24,7 +24,11 @@ public class HomePageSteps extends BaseClass {
     @Then("User verify page title as {string}")
     public void user_verify_page_title_as(String string) {
 
-        verifyTitle("DEMOQA");
-
+        verifyTitle(string);
     }
+    @Given("User navigate to Forms")
+    public void user_navigate_to_forms() {
+        homePage.clickOnElement();
+    }
+
 }
