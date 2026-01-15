@@ -6,3 +6,15 @@ Feature: Home page elements verification
     Then User verify DemoQA website logo
     Then User verify page title as "DEMOQA"
 
+  @tc002 @regression  @smoke
+  Scenario: verify practice form elements in forms section
+    Given User navigate to Forms
+    Then User Scroll down to locate “Forms” card
+    And Click on Forms
+    Then User Verify left panel menu is displayed
+    And Click on Practice Form
+    Then Practice Form page should open correctly
+    And User click on Submit button
+    And User verify Mandatory Field Validation
+    Then User verify that the form has not submitted
+

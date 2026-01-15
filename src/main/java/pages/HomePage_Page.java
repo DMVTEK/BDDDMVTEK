@@ -15,6 +15,10 @@ public class HomePage_Page extends BaseClass {
 // home page locators
     @FindBy(xpath = "//img[@src='/images/Toolsqa.jpg']")
     private WebElement QADemo_logo;
+    @FindBy(xpath = "//h5[text()='Forms']")
+    private WebElement formsButton;
+
+
 
 // methods
 
@@ -22,5 +26,9 @@ public class HomePage_Page extends BaseClass {
     {
         isElementDisplayed(QADemo_logo);
     }
+    public void clickOnElement(){
+        formsButton.click();
+    }
+
 }
 
