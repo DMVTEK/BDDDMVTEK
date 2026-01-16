@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "./src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@tc002",
+        tags = "@regression",
         dryRun = false,
         monochrome = true,
         plugin = {"pretty", "html:target/site/cucumber-pretty",
