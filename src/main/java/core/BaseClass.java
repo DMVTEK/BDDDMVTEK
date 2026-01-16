@@ -1,4 +1,4 @@
-package utils;
+package core;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
 
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static void initDriver(String browser){
 
